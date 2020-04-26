@@ -49,6 +49,7 @@ func main() {
 	case "list":
 		ProcessList(git, currentUser)
 	case "create":
+		ProcessCreate(git)
 		return
 	default:
 		printUsage()

@@ -55,6 +55,7 @@ func ProcessList(git *gitlab.Client, currentUser *gitlab.User) {
 		Items:     issues,
 		Size:      10,
 		Templates: templates,
+		HideHelp:  true,
 	}
 
 	i, _, err := prompt.Run()
